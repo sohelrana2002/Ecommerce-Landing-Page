@@ -1,0 +1,55 @@
+/* ====google fonts (poppins) link==== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    /* overflow-x: hidden; */
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all 150ms ease;
+}
+
+:root {
+    --black: #343434;
+    --bg: #F8E367;
+    --shadow1: 0px 13px 48px -1px rgba(0, 0, 0, 0.25);
+    --shadow2: 0px 13px 46px rgba(0, 0, 0, 0.13);
+    --pink: #FE956F;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+
+body {
+    background: var(--bg);
+    color: var(--black);
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FE956F;
+    border-radius: 1ex;
+}

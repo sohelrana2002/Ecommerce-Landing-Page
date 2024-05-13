@@ -1,0 +1,98 @@
+.container{
+    position: relative;
+    padding-bottom: 3rem;
+}
+.container .swiper{
+    width: 70%;
+    height: 12rem;
+    position: unset;
+}
+.container .swiper_slide{
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+.container .swiper-button-prev{
+    left: 6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container .swiper-button-next{
+    right: 6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container .swiper-button-next,
+.container .swiper-button-prev{
+    background: var(--black);
+    padding: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+}
+.container .swiper-button-next:hover,
+.container .swiper-button-prev:hover{
+    background: transparent;
+    border: 2px solid black;
+}
+.container .swiper-button-next::after,
+.container .swiper-button-prev::after{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: white;
+}
+.container .swiper-button-next:hover::after,
+.container .swiper-button-prev:hover::after{
+    color: black;
+}
+.container .swiper-pagination-bullet{
+    width: 1rem;
+    height: .4rem;
+    border-radius: .5rem;
+    top: 4rem;
+    background-color: gary;
+}
+.container .swiper-pagination-bullet-active{
+    background-color: black;
+   
+}
+.left_s{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name>:first-child{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.name>:last-child{
+    font-size: .9rem;
+}
+.left_s>:nth-child(2){
+    font-weight: bold;
+    font-size: 2rem;
+}
+.left_s>:nth-child(3){
+    font-size: .7rem;
+    border: 1px solid var(--black);
+    padding: 5px 20px;
+    width: max-content;
+    border-radius: 15px;
+}
+.slide_img{
+    transform: rotate(-20deg);
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    bottom: -20%;
+}
